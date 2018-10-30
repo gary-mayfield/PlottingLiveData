@@ -52,7 +52,7 @@ Again, don't forget the `;` at the end.
 
 ## Your code should look like this
 
-<Answer>
+
 ````js
 
 import BingMap from "./BingMap"
@@ -66,7 +66,7 @@ var map = new BingMap();
 
 }
 ````
-</Answer>
+
 
 
 
