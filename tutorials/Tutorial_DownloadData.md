@@ -53,7 +53,7 @@ Again, don't forget the `;` at the end.
 ## Your code should look like this
 
 <Answer>
-```js
+````js
 import BingMap from "./BingMap"
 import Data from "./Data"
 
@@ -64,7 +64,7 @@ var map = new BingMap();
   map.AddPoint(51.501476, -0.140634, "The Queen's House", "Blue");
 
 }
-```
+````
 </Answer>
 
 
@@ -81,7 +81,7 @@ return "The Queen's House"
 ````
 **after this** we need to add `queensHousePopUp` after the `colour` in the `map.AddPoint` brackets. See the comparison box below.
 
-```js
+````js
 var map = new BingMap();
 
   map.AddPoint(51.501476, -0.140634, "The Queen's House", "Blue");
@@ -89,7 +89,7 @@ var map = new BingMap();
   function queensHousePopUp(){
   return "The Queen's House"
   }
-```vs
+````vs
 var map = new BingMap();
 
   map.AddPoint(51.501476, -0.140634, "The Queen's House", "Blue", queensHousePopUp);
@@ -97,7 +97,7 @@ var map = new BingMap();
   function queensHousePopUp(){
   return "The Queen's House"
   }
-```
+````
 
 Your right hand screen should now demonstrate something like this:
 ![Input](https://raw.githubusercontent.com/TransportForLondonOutreach/PlottingLiveData/master/pics/queenshouse.png)
@@ -144,17 +144,17 @@ To add the Jubilee stations to your map, we need to create a new variable called
 </Answer>
 
 Now we need to make that variable that will get the location of the stations from TfL. We do this by adding the following on the same line as our new jubileeLine variable:
-```js
+````js
  = await Data.CallLine("https://api.tfl.gov.uk/Line/jubilee/StopPoints");
-```
+````
 
 Your new code should look like the box on the right
 
-```js
+````js
 var jubilee
-```vs
+````vs
 var jubilee = await Data.CallLine("https://api.tfl.gov.uk/Line/jubilee/StopPoints");
-```
+````
 
 ## What does this code do?
 Here, we are making the new jubileeLine variable 'await' for a 'call' to the StopPoints URL.
@@ -235,7 +235,7 @@ To make sure our station points display the arrivals, we need to add `ShowArriva
 <Answer>
 ````js
 map.AddPoint(station.lat, station.lon, station.commonName, "Grey");
-```vs
+````vs
 map.AddPoint(station.lat, station.lon, station.commonName, "Grey", ShowArrivals);
 ````
 </Answer>
