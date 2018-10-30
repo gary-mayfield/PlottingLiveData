@@ -54,6 +54,7 @@ Again, don't forget the `;` at the end.
 
 <Answer>
 ````js
+
 import BingMap from "./BingMap"
 import Data from "./Data"
 
@@ -66,6 +67,7 @@ var map = new BingMap();
 }
 ````
 </Answer>
+
 
 
 ## What next?
