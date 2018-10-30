@@ -52,8 +52,8 @@ Again, don't forget the `;` at the end.
 
 ## Your code should look like this
 
-
-````js
+<Answer>
+````javascript
 
 import BingMap from "./BingMap"
 import Data from "./Data"
@@ -66,9 +66,7 @@ var map = new BingMap();
 
 }
 ````
-
-
-
+</Answer>
 
 ## What next?
 Next we are going to add a pop up label to the Queen's House when you click on it. 
