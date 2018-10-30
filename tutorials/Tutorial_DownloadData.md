@@ -53,6 +53,7 @@ Again, don't forget the `;` at the end.
 ## Your code should look like this
 
 <Answer>
+
 ```javascript
 
 import BingMap from "./BingMap"
@@ -66,6 +67,7 @@ var map = new BingMap();
 
 }
 ```
+
 </Answer>
 
 ## What next?
@@ -233,11 +235,13 @@ In this section we are now going to introduce live arrivals when you click on th
 To make sure our station points display the arrivals, we need to add `ShowArrivals` to the map.AddPoint properties on **line 18**. Give it a go... if you're stuck and have no idea, have a look by clicking reveal below.
 
 <Answer>
+
 ```javascript
 map.AddPoint(station.lat, station.lon, station.commonName, "Grey");
 ```vs
 map.AddPoint(station.lat, station.lon, station.commonName, "Grey", ShowArrivals);
 ```
+
 </Answer>
 
 ## Create a Show Arrivals function
@@ -273,6 +277,7 @@ If you have any questions about this code, don't hesitate to ask a volunteer!
 Congratulations! We've now finished the exercise. Lets check your code to see the finished product!
 
 <Answer>
+
 ```javascript
 import BingMap from "./BingMap"
 import Data from "./Data"
@@ -306,4 +311,5 @@ return "This is the Queen's House"
   }
 }
 ```
+
 </Answer>
