@@ -53,7 +53,7 @@ Again, don't forget the `;` at the end.
 ## Your code should look like this
 
 <Answer>
-````javascript
+```javascript
 
 import BingMap from "./BingMap"
 import Data from "./Data"
@@ -65,7 +65,7 @@ var map = new BingMap();
   map.AddPoint(51.501476, -0.140634, "The Queen's House", "Blue");
 
 }
-````
+```
 </Answer>
 
 ## What next?
